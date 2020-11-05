@@ -1,20 +1,5 @@
-from random import randint
+import generate_array_list
 
-arr = [randint(-10, 30) for i in range(10)]
-print(arr)
-
-
-def find_small(array):
-    min_index = 0
-    min_value = 0
-    for index,value in enumerate(array):
-        if value < min_value:
-            min_value = value
-            min_index = index
-    return min_index
-
-
-
-a = find_small(arr)
+a = generate_array_list.create_array()
 
 print(a)
